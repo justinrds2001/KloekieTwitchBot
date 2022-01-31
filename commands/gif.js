@@ -3,6 +3,7 @@ module.exports = {
   name: "gif",
   description: "description",
   async execute(client, message, args, Discord) {
+    console.log("hi");
     let keywords = "cookie";
     if (args.length > 0) {
       keywords = args.join(" ");
