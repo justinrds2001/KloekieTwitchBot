@@ -27,7 +27,7 @@ module.exports = (Discord, client) => {
             name: stream.user_name,
             url: `https://www.twitch.tv/kloekeloer`,
           })
-          .setDescription("come say hello @everyone :)")
+          .setDescription("come say hello :)")
           .setThumbnail(
             `http://static-cdn.jtvnw.net/ttv-boxart/${encodeURI(
               stream.game_name
@@ -39,8 +39,9 @@ module.exports = (Discord, client) => {
 
         console.log("streamer is live!!!");
         console.debug("embed: " + JSON.stringify(embed));
+        client.channels.cache.get("938173112460148766").send("@everyone");
         client.channels.cache
-          .get("936299870279581746")
+          .get("938173112460148766")
           .send({ embeds: [embed] });
         canSendMessage = false;
       }
