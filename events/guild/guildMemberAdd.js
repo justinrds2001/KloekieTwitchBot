@@ -1,12 +1,8 @@
 module.exports = (Discord, client, guildMember) => {
   console.log("guildMemberAdd");
-  let welcomeRole = guildMember.guild.roles.cache.find(
-    (role) => role.name === "Member"
-  );
-  guildMember.roles.add(welcomeRole);
   guildMember.guild.channels.cache
-    .get("937479272413679617")
+    .get("935121823924903987")
     .send(
-      `Welcome <@${guildMember.user.id}> to our server! Make sure to read our rules`
+      `Welcome <@${guildMember.user.id}> to The Kloekie Jar! Make sure to read our rules`
     );
 };

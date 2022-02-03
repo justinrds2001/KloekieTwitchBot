@@ -39,9 +39,9 @@ module.exports = (Discord, client) => {
 
         console.log("streamer is live!!!");
         console.debug("embed: " + JSON.stringify(embed));
-        client.channels.cache.get("938173112460148766").send("@everyone");
+        client.channels.cache.get("935130733280907265").send("@everyone");
         client.channels.cache
-          .get("938173112460148766")
+          .get("935130733280907265")
           .send({ embeds: [embed] });
         canSendMessage = false;
       }
