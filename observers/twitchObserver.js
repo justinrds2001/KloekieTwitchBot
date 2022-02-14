@@ -27,7 +27,7 @@ module.exports = (Discord, client) => {
             name: stream.user_name,
             url: `https://www.twitch.tv/kloekeloer`,
           })
-          .setDescription("Spooky ghost hunting sessions tonight!")
+          //.setDescription("Spooky ghost hunting sessions tonight!")
           .setThumbnail(
             `http://static-cdn.jtvnw.net/ttv-boxart/${encodeURI(
               stream.game_name
